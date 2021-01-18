@@ -11,8 +11,10 @@ while true
   plan_num = gets.to_i
   break if (1..3).include?(plan_num)
     puts "1~3の番号から選んでください"
+end
 
-  case plan_num
+
+case plan_num
   when  1
     plan = "沖縄"
     price = 10000
@@ -22,9 +24,9 @@ while true
   when  3
     plan = "九州"
     price = 15000   
-  end 
-end
+ end 
 
+ puts "#{plan}ですね"
 
 puts "何名で予約されますか？"
 
